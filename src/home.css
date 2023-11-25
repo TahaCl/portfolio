@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat&display=swap');
+
+.homePage {
+    color: rgb(182, 202, 237);
+    background-color: #151E3D;
+    font-family: 'IBM Plex Sans', sans-serif;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.introduction {
+    width: 290px;
+    height: 135px;
+    margin-right: 2.3rem;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 0.5rem 0 0.5rem;
+}
+
+.introHeading {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.profilePic {
+    background-image: linear-gradient(90deg, black, transparent, transparent),
+        url('./IMG_0211.jpg');
+    background-repeat: no-repeat;
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    opacity: 96%;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 125px;
+    font-size: 23px;
+    margin-top: 1rem;
+}
+
+.socialIcons :hover {
+    color: #1a74af;
+}
+
+@media screen and (max-width:567px) {
+    .profilePic {
+        display: none;
+    }
+
+    .introduction {
+        margin-left: 0.45rem;
+    }
+
+    .about {
+        margin-top: 3rem;
+    }
+}
+
+.about {
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 310px; */
+}
+
+.expertise {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.expIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    height: 150px;
+    width: 100px;
+}
+
+.expertiseIcons {
+    font-size: 120px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+h5 {
+    text-align: center;
+    font-size: medium;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0.5rem 1.8rem 0 1.8rem;
+}
+
+.indvidualProject {
+    height: 310px;
+    width: 357px;
+    background-color: #3498db47;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.footer {
+    margin: 2rem 0 1rem 1.8rem;
+    text-align: center;
+    width: 100%;
+}
+
+.projectImg {
+    margin-top: 0.35rem;
+    background-image: url('./Untitled.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 95%;
+}
+
+.hoverProjectImg {
+    height: 310px;
+    width: 100%;
+    background-color: #00000000;
+}
+
+.notHover {
+    font-size: 0px;
+    color: greenyellow;
+}
+
+.hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 140px;
+    font-size: 40px;
+    color: pink;
+    transition-property: color;
+    transition-duration: 2s;
+}
+
+.responsiveBar {
+    display: none;
+}
+
+@media screen and (max-width:450px) {
+    .indvidualProject {
+        height: 225.5px;
+        width: 260px;
+        background-color: #3498db47;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: nowrap; */
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .hover {
+        position: relative;
+        bottom: 100px;
+    }
+
+    .projectImg {
+        margin-bottom: 0.3rem;
+    }
+}
+
+@media screen and (min-width:660px) {
+    .introduction {
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width:740px) {
+    .introduction {
+        margin-right: 4rem;
+    }
+}
+
+@media screen and (min-width:810px) {
+    .introduction {
+        margin-right: 5.4rem;
+    }
+
+}
+
+@media screen and (min-width:1018px) {
+    .homePage {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .rightContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 2rem 1.5rem 0 1.5rem;
+    }
+
+    .homeintroCont {
+        position: sticky;
+        top: 5px;
+        bottom: 5px;
+        height: max-content;
+        display: flex;
+        align-items: flex-start;
+        max-width: 40%;
+    }
+
+    .responsiveBar {
+        display: block;
+        font-size: larger;
+        margin: 0.5rem 0.5rem 0.5rem 0;
+        cursor: pointer;
+    }
+
+    .responsiveBar :hover {
+        color: #1a74af;
+    }
+
+    .homeintroCont {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 50%;
+    }
+
+    .profilePic {
+        height: 250px;
+        width: 250px;
+        background-size: cover;
+    }
+
+    .about {
+        margin-top: 2rem;
+    }
+
+    .expertise,
+    .projects {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .indvidualProject {
+        height: 225.5px;
+        width: 260px;
+        background-color: #3498db47;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .hover {
+        position: relative;
+        bottom: 100px;
+    }
+
+    .projectImg {
+        margin-bottom: 0.3rem;
+    }
+}
