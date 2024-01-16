@@ -95,11 +95,11 @@ const Home = () => {
                     <FaExternalLinkAlt className={hoverProj ? 'hover' : 'notHover'} />
                 </article>
                 <article className="indvidualProject">
-                    <div onMouseOver={()=>setHoverProj(true)} className={hoverProj ? 'hoverProjectImg' : 'projectImg'}></div>
+                    <div onMouseOver={()=>setHoverProj(true)} className={hoverProj ? 'hoverProjectImg' : 'projectImg1'}></div>
                     <FaExternalLinkAlt className={hoverProj ? 'hover' : 'notHover'} />
                 </article>
                 <article className="indvidualProject">
-                    <div onMouseOver={()=>setHoverProj(true)} className={hoverProj ? 'hoverProjectImg' : 'projectImg'}></div>
+                    <div onMouseOver={()=>setHoverProj(true)} className={hoverProj ? 'hoverProjectImg' : 'projectImg2'}></div>
                     <FaExternalLinkAlt className={hoverProj ? 'hover' : 'notHover'} />
                 </article>
             </section>

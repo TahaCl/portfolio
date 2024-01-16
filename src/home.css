@@ -147,6 +147,24 @@ h5 {
     width: 95%;
 }
 
+.projectImg1 {
+    margin-top: 0.35rem;
+    background-image: url('./1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 95%;
+}
+
+.projectImg2 {
+    margin-top: 0.35rem;
+    background-image: url('./2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 95%;
+}
+
 .hoverProjectImg {
     height: 310px;
     width: 100%;
