@@ -2,12 +2,13 @@
 
 .homePage {
     color: rgb(182, 202, 237);
-    background-color: #151E3D;
+    /* background-color: transparent; */
     font-family: 'IBM Plex Sans', sans-serif;
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 95%;
 }
 
 .introduction {
@@ -28,7 +29,7 @@
 
 .profilePic {
     background-image: linear-gradient(90deg, black, transparent, transparent),
-        url('./IMG_0211.jpg');
+        url('../Images/IMG_0211.jpg');
     background-repeat: no-repeat;
     height: 270px;
     width: 270px;
@@ -75,6 +76,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* z-index: 1; */
     /* height: 310px; */
 }
 
@@ -84,6 +86,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    /* z-index: 1; */
 }
 
 .expIcon {
@@ -116,6 +119,7 @@ h5 {
     justify-content: center;
     flex-wrap: wrap;
     margin: 0.5rem 1.8rem 0 1.8rem;
+    /* z-index: 1; */
 }
 
 .indvidualProject {
@@ -132,15 +136,28 @@ h5 {
     cursor: pointer;
 }
 
+/* .indvidualProject {
+    background-color: #3498db47;
+}
+
+.indvidualProject1 {
+    background-color: #3498db47;
+}
+
+.indvidualProject2 {
+    background-color: #3498db47;
+} */
+
 .footer {
     margin: 2rem 0 1rem 1.8rem;
     text-align: center;
     width: 100%;
+    z-index: 1;
 }
 
 .projectImg {
     margin-top: 0.35rem;
-    background-image: url('./Untitled.png');
+    background-image: url('../Images/Untitled.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 300px;
@@ -149,7 +166,7 @@ h5 {
 
 .projectImg1 {
     margin-top: 0.35rem;
-    background-image: url('./1.png');
+    background-image: url('../Images/1.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 300px;
@@ -158,7 +175,7 @@ h5 {
 
 .projectImg2 {
     margin-top: 0.35rem;
-    background-image: url('./2.png');
+    background-image: url('../Images/2.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 300px;
@@ -168,13 +185,12 @@ h5 {
 .hoverProjectImg {
     height: 310px;
     width: 100%;
-    background-color: #00000000;
 }
 
 .notHover {
-    font-size: 0px;
-    color: greenyellow;
+    display: none;
 }
+
 
 .hover {
     display: flex;
@@ -182,10 +198,10 @@ h5 {
     justify-content: center;
     position: relative;
     bottom: 140px;
-    font-size: 40px;
-    color: pink;
-    transition-property: color;
-    transition-duration: 2s;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .responsiveBar {
@@ -240,7 +256,7 @@ h5 {
     .homePage {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 95%;
     }
 
     .rightContent {
@@ -249,6 +265,7 @@ h5 {
         align-items: flex-start;
         justify-content: center;
         width: 60%;
+        /* z-index: 9999; */
     }
 
     .home {
@@ -281,7 +298,7 @@ h5 {
     .homeintroCont {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         width: 50%;
     }
 
@@ -302,6 +319,7 @@ h5 {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        /* z-index: 9999; */
     }
 
     .indvidualProject {
@@ -316,7 +334,9 @@ h5 {
         cursor: pointer;
     }
 
-    .hover {
+    .hover,
+    .hover1,
+    .hover2 {
         position: relative;
         bottom: 100px;
     }

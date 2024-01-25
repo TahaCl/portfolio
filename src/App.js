@@ -1,16 +1,17 @@
 import React from "react";
-import Navbar from './navbar';
-import Home from "./home";
+import Navbar from './Navbar/navbar';
+import Home from "./Home/home";
 import {Routes, Route} from 'react-router-dom';
-import AnimCursor from "./CircleCursor";
+import ParticlesBg from "./Components/Particles";
+import AnimCursor from "./Cursor/CircleCursor";
 
 const App = () => {
   return (
     <React.Fragment>
-      <AnimCursor/>
+      <ParticlesBg/>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route to='/' element={<Home/>}/>
       </Routes>
     </React.Fragment>
   );
